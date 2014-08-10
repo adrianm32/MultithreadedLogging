@@ -67,6 +67,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ConsoleObserver.h" />
     <ClInclude Include="LogDistributor.h" />
     <ClInclude Include="LoggerThread.h" />
     <ClInclude Include="LogMessage.h" />
@@ -79,8 +80,10 @@
     <ClInclude Include="ThreadBase.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="LogDistributor.cpp" />
     <ClCompile Include="LoggerThread.cpp" />
     <ClCompile Include="LogMessageQueue.cpp" />
+    <ClCompile Include="LogObserver.cpp" />
     <ClCompile Include="MainFrame.cpp" />
     <ClCompile Include="MulithreadedLoggingApp.cpp" />
     <ClCompile Include="stdafx.cpp" />

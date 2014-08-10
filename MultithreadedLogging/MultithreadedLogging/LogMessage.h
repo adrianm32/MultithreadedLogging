@@ -31,6 +31,15 @@ public:
 		) : m_nArea(nArea), m_nLevel(nLevel), m_strText(pszText)
 	{};
 
+	LogMessage
+		(
+		const Area nArea,                                 // The message area
+		const Level nLevel,                               // The message level
+		std::string & strText                                  // The message text
+		)
+		: m_nArea(nArea), m_nLevel(nLevel), m_strText(strText)
+	{ }
+
 	//copy ctor
 	LogMessage(const LogMessage & rSrc)
 		:m_nArea(rSrc.m_nArea), m_nLevel(rSrc.m_nLevel), m_strText(rSrc.m_strText)
